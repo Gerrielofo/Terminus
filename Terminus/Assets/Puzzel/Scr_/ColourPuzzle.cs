@@ -42,7 +42,7 @@ public class ColourPuzzle : MonoBehaviour
         colorList.RemoveAt(r);
         return pickedColor;
     }
-    public void Kanker()
+    public void Bset()
     {
         Coret();
     }
