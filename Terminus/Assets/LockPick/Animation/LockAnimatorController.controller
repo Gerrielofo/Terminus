@@ -124,7 +124,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: LockOpen
     m_Mirror: 0
-  m_BlendParameter: LockOpen
+  m_BlendParameter: PickPosition
   m_BlendParameterY: LockOpen
   m_MinThreshold: 0
   m_MaxThreshold: 1
@@ -210,7 +210,7 @@ AnimatorController:
     m_Controller: {fileID: 0}
   - m_Name: PickPosition
     m_Type: 1
-    m_DefaultFloat: 0
+    m_DefaultFloat: 1
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
