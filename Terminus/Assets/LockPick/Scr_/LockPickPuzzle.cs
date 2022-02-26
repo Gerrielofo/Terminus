@@ -19,7 +19,6 @@ public class LockPickPuzzle : MonoBehaviour
     [SerializeField] float pickSpeed = 3f;
 
 
-
     float cyllinderPosition;
     public float CyllinderPosition
     {
@@ -27,7 +26,7 @@ public class LockPickPuzzle : MonoBehaviour
         set
         {
             cyllinderPosition = value;
-            cyllinderPosition = Mathf.Clamp(cyllinderPosition, 0f, 1f);
+            cyllinderPosition = Mathf.Clamp(cyllinderPosition, 0f, MaxRotationDistance);
         }
     }
 
@@ -36,23 +35,91 @@ public class LockPickPuzzle : MonoBehaviour
 
 
     Animator animator;
+   
+    bool paused = false;
+
+    float targetPosition;
+    
+    [SerializeField] float leanency = 0.1f;
+   
+    float MaxRotationDistance
+    {
+        get
+        {
+            return 1f - Mathf.Abs(targetPosition - PickPosition) + leanency;
+        }
+    }
+
+    bool shaking;
+    float tension = 0f;
+    [SerializeField] float tensionMultiplicator = 1f;
 
     private void Awake()
     {
         animator = GetComponent<Animator>();
     }
 
+    private void Start()
+    {
+        Init();
+    }
+
+    void Init()
+    {
+        CyllinderPosition = 0f;
+        PickPosition = 0f;
+        tension = 0f;
+
+        targetPosition = UnityEngine.Random.value;
+    }
+
     private void Update()
     {
-        Pick();
+        if(paused==true) { return; }
+        if (Input.GetAxisRaw("Vertical") == 0)
+        {
+            Pick();
+        }
+        Shaking();
         Cyllinder();
         UpdateAnimator();
+    }
+
+    void Shaking()
+    {
+        shaking = MaxRotationDistance - CyllinderPosition < 0.03f;
+        if (shaking)
+        {
+            tension += Time.deltaTime * tensionMultiplicator;
+            if(tension > 1f)
+            {
+                PickBreak();
+            }
+        }
+    }
+
+    void PickBreak()
+    {
+        Debug.Log("You broke the pick");
+        paused = true;
+        
     }
 
     void Cyllinder()
     {
         CyllinderPosition -= cyllinderRetentionSpeed * Time.deltaTime;
         CyllinderPosition += Mathf.Abs(Input.GetAxisRaw("Vertical")) * Time.deltaTime * cyllinderRotationSpeed;
+        if (CyllinderPosition > 0.98f)
+        {
+            Win();
+        }
+        
+    }
+
+    void Win()
+    {
+        paused = true;
+        Debug.Log("You opened the lock");
     }
 
     private void Pick()
@@ -64,6 +131,7 @@ public class LockPickPuzzle : MonoBehaviour
     {
         animator.SetFloat("PickPosition", PickPosition);
         animator.SetFloat("LockOpen", CyllinderPosition);
+        animator.SetBool("Shake", shaking);
     }
 
 

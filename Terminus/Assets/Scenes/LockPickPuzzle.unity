@@ -425,8 +425,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickSpeed: 0.8
-  cyllinderRotationSpeed: 0.7
-  cyllinderRetentionSpeed: 0.3
+  cyllinderRotationSpeed: 2.2
+  cyllinderRetentionSpeed: 1
+  leanency: 0.02
 --- !u!4 &307632075134023910
 Transform:
   m_ObjectHideFlags: 0
