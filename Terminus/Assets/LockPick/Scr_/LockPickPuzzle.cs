@@ -66,11 +66,18 @@ public class LockPickPuzzle : MonoBehaviour
 
     void Init()
     {
+        Reset();
+
+        targetPosition = UnityEngine.Random.value;
+    }
+
+    public void Reset()
+    {
         CyllinderPosition = 0f;
         PickPosition = 0f;
         tension = 0f;
+        paused = false;
 
-        targetPosition = UnityEngine.Random.value;
     }
 
     private void Update()
@@ -101,7 +108,7 @@ public class LockPickPuzzle : MonoBehaviour
     void PickBreak()
     {
         Debug.Log("You broke the pick");
-        paused = true;
+        Reset();
         
     }
 
