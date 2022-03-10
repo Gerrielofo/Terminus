@@ -17,17 +17,23 @@ public class FirstPerson : MonoBehaviour
     public float mouseSensitivity = 100f;
     float xRotation = 0f;
 
+    public float walkSpeed = 4f;
+    public float sprintSpeed = 8f;
+
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+
     }
 
     private void Update()
     {
         Movement();
         Mouselook();
+        Sprint();
 
     }
+
     void Movement()
     {
         horizontal = Input.GetAxis("Horizontal");
@@ -36,6 +42,7 @@ public class FirstPerson : MonoBehaviour
         v.z = vertical;
         transform.Translate(v * speed * Time.deltaTime);
     }
+
     void Mouselook()
     {
         
@@ -60,6 +67,28 @@ public class FirstPerson : MonoBehaviour
 
 
         transform.Rotate(bodyRotation);
+
+    }
+
+    void Sprint()
+    {
+        transform.Translate(walkSpeed * Input.GetAxis("Horizontal") * Time.deltaTime, 0f, walkSpeed * Input.GetAxis("Vertical") * Time.deltaTime);
+
+        if (Input.GetKey())
+        if (Input.GetKey(KeyCode.LeftShift))
+
+        {
+            walkSpeed = sprintSpeed;
+        }
+        else
+
+        {
+            walkSpeed = walkSpeed;
+        }
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            walkSpeed = 4f;
+        }
 
     }
 }
