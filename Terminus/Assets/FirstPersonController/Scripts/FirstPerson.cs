@@ -4,21 +4,36 @@ using UnityEngine;
 
 public class FirstPerson : MonoBehaviour
 {
-    public Vector3 v;
+    public Transform view;
+    private Vector3 v;
     public float horizontal;
     public float vertical;
     public float speed = 100f;
 
+<<<<<<< Updated upstream
     public float mouseSensitivity = 100f;
     public Transform playerBody;
     float xRotation = 0f;
+=======
+    private Vector3 bodyRotation;
+    private Vector3 cameraRotation;
+    public float mousex;
+    public float mousey;
+    public float mouseSensitivity = 100f;
+>>>>>>> Stashed changes
 
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
     }
 
-    void Update()
+    private void Update()
+    {
+        Movement();
+        Mouselook();
+
+    }
+    void Movement()
     {
         horizontal = Input.GetAxis("Horizontal");
         v.x = horizontal;
@@ -28,6 +43,7 @@ public class FirstPerson : MonoBehaviour
     }
     void Mouselook()
     {
+<<<<<<< Updated upstream
 
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
@@ -35,5 +51,16 @@ public class FirstPerson : MonoBehaviour
         xRotation -= mouseY;
 
         playerBody.Rotate(Vector3.up * mouseX);
+=======
+        mousey = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+        cameraRotation.x = mousey;
+        mousex = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+        bodyRotation.y = mousex;
+
+
+        transform.Rotate(bodyRotation);
+        view.Rotate(-cameraRotation);
+
+>>>>>>> Stashed changes
     }
 }
