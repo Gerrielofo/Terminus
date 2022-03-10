@@ -38,18 +38,28 @@ public class FirstPerson : MonoBehaviour
     }
     void Mouselook()
     {
-
+        
         mousey = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
         cameraRotation.x = mousey;
         mousex = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-        bodyRotation.y = mousex;
 
-        xRotation -= mousex;
+        //
+        // xRotation pakt de inverted waarde van mousey
+        xRotation -= mousey;
+        //xRotation clamped van -90 tot 90
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
-        transform.Rotate(bodyRotation);
-        view.Rotate(-cameraRotation);
+        //hier word een vector 3 aangemaakt met de xyz van EulerAngles van view
+        Vector3 newRot = view.eulerAngles;
+        // hier pakt hij de x as van de v3 newRot zodat hij aangepast kan worden naar xRotation
+        newRot.x = xRotation;
 
+        // hier zet hij de resterende assen naar hun originele staat want
+        // normaal kan je niet 1 as aanpassen van een eulerAngles
+        view.eulerAngles = newRot;
+
+
+        transform.Rotate(bodyRotation);
 
     }
 }

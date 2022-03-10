@@ -259,7 +259,7 @@ MonoBehaviour:
   speed: 100
   mousex: 0
   mousey: 0
-  mouseSensitivity: 100
+  mouseSensitivity: 800
 --- !u!136 &150645878
 CapsuleCollider:
   m_ObjectHideFlags: 0
