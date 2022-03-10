@@ -10,17 +10,12 @@ public class FirstPerson : MonoBehaviour
     public float vertical;
     public float speed = 100f;
 
-<<<<<<< Updated upstream
-    public float mouseSensitivity = 100f;
-    public Transform playerBody;
-    float xRotation = 0f;
-=======
     private Vector3 bodyRotation;
     private Vector3 cameraRotation;
     public float mousex;
     public float mousey;
     public float mouseSensitivity = 100f;
->>>>>>> Stashed changes
+    float xRotation = 0f;
 
     void Start()
     {
@@ -43,24 +38,18 @@ public class FirstPerson : MonoBehaviour
     }
     void Mouselook()
     {
-<<<<<<< Updated upstream
 
-        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
-
-        xRotation -= mouseY;
-
-        playerBody.Rotate(Vector3.up * mouseX);
-=======
         mousey = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
         cameraRotation.x = mousey;
         mousex = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
         bodyRotation.y = mousex;
 
+        xRotation -= mousex;
+        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
         transform.Rotate(bodyRotation);
         view.Rotate(-cameraRotation);
 
->>>>>>> Stashed changes
+
     }
 }
