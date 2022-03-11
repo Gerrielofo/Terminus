@@ -75,11 +75,6 @@ public class FirstPerson : MonoBehaviour
     {
         transform.Translate(movement * Input.GetAxis("Horizontal") * Time.deltaTime, 0f, movement * Input.GetAxis("Vertical") * Time.deltaTime);
 
-<<<<<<< Updated upstream
-       
-        if (Input.GetKey(KeyCode.LeftShift))
-=======
->>>>>>> Stashed changes
 
         if (Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.W))
         {
