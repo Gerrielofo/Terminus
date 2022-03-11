@@ -17,6 +17,7 @@ public class FirstPerson : MonoBehaviour
     public float mouseSensitivity = 100f;
     float xRotation = 0f;
 
+    public float movement;
     public float walkSpeed = 4f;
     public float sprintSpeed = 8f;
 
@@ -49,7 +50,7 @@ public class FirstPerson : MonoBehaviour
         mousey = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
         cameraRotation.x = mousey;
         mousex = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-
+        bodyRotation.y = mousex;
         //
         // xRotation pakt de inverted waarde van mousey
         xRotation -= mousey;
@@ -72,23 +73,23 @@ public class FirstPerson : MonoBehaviour
 
     void Sprint()
     {
-        transform.Translate(walkSpeed * Input.GetAxis("Horizontal") * Time.deltaTime, 0f, walkSpeed * Input.GetAxis("Vertical") * Time.deltaTime);
+        transform.Translate(movement * Input.GetAxis("Horizontal") * Time.deltaTime, 0f, movement * Input.GetAxis("Vertical") * Time.deltaTime);
 
+<<<<<<< Updated upstream
        
         if (Input.GetKey(KeyCode.LeftShift))
+=======
+>>>>>>> Stashed changes
 
+        if (Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.W))
         {
-            walkSpeed = sprintSpeed;
+            movement = sprintSpeed;
         }
         else
-
         {
-            walkSpeed = walkSpeed;
-        }
-        if (Input.GetKeyUp(KeyCode.LeftShift))
-        {
-            walkSpeed = 4f;
+            movement = walkSpeed;
         }
 
     }
+
 }
