@@ -74,7 +74,7 @@ public class FirstPerson : MonoBehaviour
     {
         transform.Translate(walkSpeed * Input.GetAxis("Horizontal") * Time.deltaTime, 0f, walkSpeed * Input.GetAxis("Vertical") * Time.deltaTime);
 
-        if (Input.GetKey())
+       
         if (Input.GetKey(KeyCode.LeftShift))
 
         {
