@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class DoorOpen : MonoBehaviour
 {
-    public Animation anim;
+    private Animator anim;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        anim = gameObject.GetComponent<Animation>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -16,7 +16,7 @@ public class DoorOpen : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.E))
         {
-            anim.Play("DoorAnim");
+            //anim.Play("DoorAnim");
         }
     }
 }
