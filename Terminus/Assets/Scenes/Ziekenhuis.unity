@@ -2819,6 +2819,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.1988869, y: 1.77, z: 0.10000012}
   m_Center: {x: 0.59944344, y: -0.000000029802322, z: 0.000001477078}
+--- !u!114 &1193746629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193746616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29bea015f23718c40b77a17341fac657, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fpsCam: {fileID: 1758540216}
+  range: 100
 --- !u!1001 &1224808713
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5055,7 +5069,7 @@ Animator:
   m_GameObject: {fileID: 2003805821}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d8413d6d8f1b19347a3a57128077fc21, type: 2}
+  m_Controller: {fileID: 9100000, guid: 737327767c1fc5b4b9ef858250801e5f, type: 2}
   m_CullingMode: 2
   m_UpdateMode: 1
   m_ApplyRootMotion: 1
@@ -5077,6 +5091,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29bea015f23718c40b77a17341fac657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fpsCam: {fileID: 1758540216}
+  range: 100
 --- !u!65 &2003805827
 BoxCollider:
   m_ObjectHideFlags: 0

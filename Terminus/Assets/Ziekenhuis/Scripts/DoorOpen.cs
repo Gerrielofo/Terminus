@@ -5,6 +5,10 @@ using UnityEngine;
 public class DoorOpen : MonoBehaviour
 {
     private Animator anim;
+    
+    public RaycastHit hit;
+    public Camera fpsCam;
+    public float range = 100f;
     // Start is called before the first frame update
     void Awake()
     {
@@ -14,9 +18,23 @@ public class DoorOpen : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.E))
+        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
-            //anim.Play("DoorAnim");
+            if (hit.transform.tag == "IsDoor")
+            {
+                if (Input.GetKey(KeyCode.E))
+                {
+                    OpenDoor();
+                }
+            }
+        }
+       
+    }
+    void OpenDoor()
+    {
+        
+        {
+            anim.SetTrigger("Open");
         }
     }
 }
