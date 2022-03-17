@@ -13,6 +13,7 @@ public class DoorOpen : MonoBehaviour
     void Awake()
     {
         anim = GetComponent<Animator>();
+        range = 2;
     }
 
     // Update is called once per frame
@@ -36,5 +37,12 @@ public class DoorOpen : MonoBehaviour
         {
             anim.SetTrigger("Open");
         }
+    }
+    void OnGUI()
+    {
+        GUI.enabled = true;
+        Camera cam = Camera.current;
+        Vector3 pos = cam.WorldToScreenPoint(new Vector3(0, 5, 0));
+        GUI.Label(new Rect(pos.x, Screen.height - pos.y, 150, 130), "Press 'E' to open");
     }
 }
