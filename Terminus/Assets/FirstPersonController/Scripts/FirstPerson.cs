@@ -51,7 +51,6 @@ public class FirstPerson : MonoBehaviour
         cameraRotation.x = mousey;
         mousex = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
         bodyRotation.y = mousex;
-        //
         // xRotation pakt de inverted waarde van mousey
         xRotation -= mousey;
         //xRotation clamped van -90 tot 90
