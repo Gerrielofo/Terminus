@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 18089
+  controlID: 27
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 18090
+  controlID: 28
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 18091
+  controlID: 29
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -428,9 +428,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 36fbffff
-      m_LastClickedID: -1226
-      m_ExpandedIDs: 38fbffffcc660000e4660000fe660000
+      m_SelectedIDs: d2660000
+      m_LastClickedID: 26322
+      m_ExpandedIDs: 38fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -680,7 +680,7 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.1112533, y: 0.05681777, z: -8.955902}
+    m_Target: {x: 1.4173291, y: 0.57182837, z: -8.265823}
     speed: 2
     m_Value: {x: 1.1112533, y: 0.05681777, z: -8.955902}
   m_RenderMode: 0
@@ -729,11 +729,11 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.112571925, y: -0.6752406, z: 0.105375454, w: -0.72133434}
+    m_Target: {x: -0.07015237, y: -0.8152085, z: 0.10103371, w: -0.5659999}
     speed: 2
     m_Value: {x: 0.11257192, y: 0.6752406, z: -0.10537545, w: 0.72133434}
   m_Size:
-    m_Target: 1.842208
+    m_Target: 1.6733421
     speed: 2
     m_Value: 1.842208
   m_Ortho:
@@ -937,22 +937,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Ziekenhuis/Prefaps
+    - Assets/TutorialInfo
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Ziekenhuis/Prefaps
+  - Assets/TutorialInfo
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\gerlo\Documents\GitHub\Terminus\Terminus
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 11}
-    m_SelectedIDs: 126b0000
-    m_LastClickedID: 27410
-    m_ExpandedIDs: 00000000f26a0000f46a0000f66a000000ca9a3b
+    m_SelectedIDs: 106b0000
+    m_LastClickedID: 27408
+    m_ExpandedIDs: 000000001e690000206900002269000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -980,7 +980,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f26a0000f46a0000f66a000000ca9a3b
+    m_ExpandedIDs: 000000001e6900002069000022690000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
