@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FirstPerson : MonoBehaviour
 {
@@ -21,10 +22,16 @@ public class FirstPerson : MonoBehaviour
     public float walkSpeed = 4f;
     public float sprintSpeed = 8f;
 
+    public int maxHealth = 100;
+    public int currentHealth;
+    public HealthBar healthBar;
+
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
 
+        currentHealth = maxHealth;
+        healthBar.SetMaxhealth(maxHealth);
     }
 
     private void Update()
@@ -32,6 +39,7 @@ public class FirstPerson : MonoBehaviour
         Movement();
         Mouselook();
         Sprint();
+        PlayerHealth();
 
     }
 
@@ -46,7 +54,7 @@ public class FirstPerson : MonoBehaviour
 
     void Mouselook()
     {
-        
+
         mousey = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
         cameraRotation.x = mousey;
         mousex = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
@@ -85,5 +93,27 @@ public class FirstPerson : MonoBehaviour
         }
 
     }
+
+    void PlayerHealth()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            TakeDamage(20);
+
+        }
+
+        void TakeDamage(int damage)
+        {
+            currentHealth -= damage;
+
+            healthBar.SetHealth(currentHealth);
+
+            if (currentHealth <= 0)
+            {
+                SceneManager.LoadScene(2);
+            }
+        }
+    }
+
 
 }
