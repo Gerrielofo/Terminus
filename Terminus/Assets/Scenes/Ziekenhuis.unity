@@ -622,6 +622,9 @@ MonoBehaviour:
   movement: 0
   walkSpeed: 2
   sprintSpeed: 4
+  maxHealth: 100
+  currentHealth: 0
+  healthBar: {fileID: 0}
 --- !u!136 &1164351432
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -875,6 +878,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isOpen: 0
   anim: {fileID: 0}
+--- !u!1 &1966813802 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 66b289f4010b8a5478b2ef314ffd45c1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1102501602}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1966813803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1966813802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 338b92e9f23f0024fa7ba79507921c72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intensity: 7
+  smooth: 7
 --- !u!1 &1969792248 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5940307025703539582, guid: c48592d85096ce142b19abc33a841045,
