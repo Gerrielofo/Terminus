@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class LockPickPuzzle : MonoBehaviour
 {
+
     float pickPosition;
     public float PickPosition
     {
@@ -73,16 +74,31 @@ public class LockPickPuzzle : MonoBehaviour
 
     public void Reset()
     {
-        CyllinderPosition = 0f;
-        PickPosition = 0f;
-        tension = 0f;
-        paused = false;
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            CyllinderPosition = 0f;
+            PickPosition = 0f;
+            tension = 0f;
+            paused = false;
 
-    }
+            print("heehee");
+
+        }
+
+
+
+
+    }    
 
     private void Update()
     {
-        if(paused==true) { return; }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            Reset();
+        }
+        
+        if (paused==true) { return; }
         if (Input.GetAxisRaw("Vertical") == 0)
         {
             Pick();
@@ -90,6 +106,11 @@ public class LockPickPuzzle : MonoBehaviour
         Shaking();
         Cyllinder();
         UpdateAnimator();
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            Reset();
+        }
     }
 
     void Shaking()
@@ -107,9 +128,8 @@ public class LockPickPuzzle : MonoBehaviour
 
     void PickBreak()
     {
+        paused = true;
         Debug.Log("You broke the pick");
-        Reset();
-        
     }
 
     void Cyllinder()
@@ -127,6 +147,7 @@ public class LockPickPuzzle : MonoBehaviour
     {
         paused = true;
         Debug.Log("You opened the lock");
+        
     }
 
     private void Pick()
