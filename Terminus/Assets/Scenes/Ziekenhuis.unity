@@ -143,7 +143,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOpen: 0
-  anim: {fileID: 0}
+  anim: {fileID: 334846106}
+--- !u!95 &334846106 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6823336159972090514, guid: c48592d85096ce142b19abc33a841045,
+    type: 3}
+  m_PrefabInstance: {fileID: 6823336158812029487}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &543090205
 GameObject:
   m_ObjectHideFlags: 0
@@ -743,7 +749,7 @@ GameObject:
   - component: {fileID: 1758540215}
   - component: {fileID: 1758540214}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: FPSCam
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -849,6 +855,46 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1 &1834184813 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5940307026451288871, guid: c48592d85096ce142b19abc33a841045,
+    type: 3}
+  m_PrefabInstance: {fileID: 6823336158812029487}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1834184814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834184813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a97891f5b88b42343801fa93d4837126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOpen: 0
+  anim: {fileID: 0}
+--- !u!1 &1969792248 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5940307025703539582, guid: c48592d85096ce142b19abc33a841045,
+    type: 3}
+  m_PrefabInstance: {fileID: 6823336158812029487}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1969792250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969792248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a97891f5b88b42343801fa93d4837126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOpen: 0
+  anim: {fileID: 0}
 --- !u!1 &2094023843
 GameObject:
   m_ObjectHideFlags: 0

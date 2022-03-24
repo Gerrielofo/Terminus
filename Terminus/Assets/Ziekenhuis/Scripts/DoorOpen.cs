@@ -20,7 +20,7 @@ public class DoorOpen : MonoBehaviour
         {
             if (hit.transform.tag == "IsDoor")
             {
-                if (Input.GetKey(KeyCode.E))
+                if (Input.GetKeyDown(KeyCode.E))
                 {
                     hit.transform.gameObject.GetComponent<OnDoor>().DoTheOpen();
                 }
@@ -28,18 +28,25 @@ public class DoorOpen : MonoBehaviour
             }
         }
     }
-       
-    //    void OnGUI()
-    //    {
-    //        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
-    //        {
-    //            if (isOpen == false)
-    //            {
-    //                if (hit.transform.tag == "IsDoor")
-    //                {
-    //                    GUI.Label(new Rect(Screen.width / 2 - 75, Screen.height - 400, 150, 30), "Press 'E' to open the door");
-    //                }
-    //            }
-    //        }
-    //    }
+
+    void OnGUI()
+    {
+        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
+        {
+            if (hit.transform.gameObject.GetComponent<OnDoor>().isOpen == false)
+            {
+                if (hit.transform.tag == "IsDoor")
+                {
+                    GUI.Label(new Rect(Screen.width / 2 - 75, Screen.height - 400, 150, 30), "Press 'E' to open the door");
+                }
+            }
+            if (hit.transform.gameObject.GetComponent<OnDoor>().isOpen == true)
+            {
+                if (hit.transform.tag == "IsDoor")
+                {
+                    GUI.Label(new Rect(Screen.width / 2 - 75, Screen.height - 400, 150, 30), "Press 'E' to close the door");
+                }
+            }
+        }
+    }
 }
