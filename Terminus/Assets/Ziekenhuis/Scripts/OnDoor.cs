@@ -4,19 +4,43 @@ using UnityEngine;
 
 public class OnDoor : MonoBehaviour
 {
-    public bool isOpen = false;
-    public Animator anim;
+    private float x;
+    private float z;
+    public bool isOpen;
+    public bool wantOpen;
+    private float rotationSpeed;
 
-    // Start is called before the first frame update
     void Start()
     {
-        anim = gameObject.GetComponent<Animator>();
+        x = 0.0f;
+        z = 0.0f;
+        isOpen = true;
+        rotationSpeed = 75.0f;
     }
 
-    // Update is called once per frame
-    public void DoTheOpen()
+    void FixedUpdate()
     {
-        anim.Play("Heehee");
-        isOpen = true;
+        if (isOpen == true)
+        {
+            x += Time.deltaTime * rotationSpeed;
+
+            if (x > 360.0f)
+            {
+                x = 0.0f;
+                isOpen = false;
+            }
+        }
+        else
+        {
+            z += Time.deltaTime * rotationSpeed;
+
+            if (z > 90.0f)
+            {
+                z = 0.0f;
+                isOpen = true;
+            }
+        }
+
+        transform.localRotation = Quaternion.Euler(x, 0, z);
     }
 }

@@ -31,7 +31,7 @@ public class FirstPerson : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
 
         currentHealth = maxHealth;
-        healthBar.SetMaxhealth(maxHealth);
+        //healthBar.SetMaxhealth(maxHealth);
     }
 
     private void Update()

@@ -42,7 +42,7 @@ ModelImporter:
       name: Plane.001|PlaneAction
       takeName: Plane.001|PlaneAction
       internalID: 0
-      firstFrame: 0
+      firstFrame: 6
       lastFrame: 34
       wrapMode: 0
       orientationOffsetY: 0

@@ -124,6 +124,26 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &151549759 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 893620230717818139, guid: ba12300b3f1199346bfb764c99f6f886,
+    type: 3}
+  m_PrefabInstance: {fileID: 873330462769842167}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &151549763
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151549759}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4493585093827132993, guid: 88f80dc146d8e354cbe87ba015a11faa, type: 3}
 --- !u!1 &334846097 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5940307025666945838, guid: c48592d85096ce142b19abc33a841045,
@@ -143,13 +163,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOpen: 0
-  anim: {fileID: 334846106}
---- !u!95 &334846106 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 6823336159972090514, guid: c48592d85096ce142b19abc33a841045,
+  wantOpen: 0
+--- !u!1 &529537862 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6396516605155304637, guid: ba12300b3f1199346bfb764c99f6f886,
     type: 3}
-  m_PrefabInstance: {fileID: 6823336158812029487}
+  m_PrefabInstance: {fileID: 873330462769842167}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &529537868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529537862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a97891f5b88b42343801fa93d4837126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOpen: 0
+  wantOpen: 0
 --- !u!1 &543090205
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,6 +361,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &902662637 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5943752778942815192, guid: ba12300b3f1199346bfb764c99f6f886,
+    type: 3}
+  m_PrefabInstance: {fileID: 873330462769842167}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &902662643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902662637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a97891f5b88b42343801fa93d4837126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOpen: 0
+  wantOpen: 0
 --- !u!1001 &975971929
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -739,6 +793,26 @@ CapsuleCollider:
   m_Height: 1.8
   m_Direction: 1
   m_Center: {x: 0, y: 0.89828944, z: -0.043881264}
+--- !u!1 &1713958444 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6387178222409681873, guid: ba12300b3f1199346bfb764c99f6f886,
+    type: 3}
+  m_PrefabInstance: {fileID: 873330462769842167}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1713958450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713958444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a97891f5b88b42343801fa93d4837126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOpen: 0
+  wantOpen: 0
 --- !u!1 &1758540212
 GameObject:
   m_ObjectHideFlags: 0
@@ -877,7 +951,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOpen: 0
-  anim: {fileID: 0}
+  wantOpen: 0
+--- !u!1 &1926425081 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5943752778979687304, guid: ba12300b3f1199346bfb764c99f6f886,
+    type: 3}
+  m_PrefabInstance: {fileID: 873330462769842167}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1926425087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926425081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a97891f5b88b42343801fa93d4837126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOpen: 0
+  wantOpen: 0
 --- !u!1 &1966813802 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 66b289f4010b8a5478b2ef314ffd45c1,
@@ -917,7 +1011,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOpen: 0
-  anim: {fileID: 0}
+  wantOpen: 0
 --- !u!1 &2094023843
 GameObject:
   m_ObjectHideFlags: 0
@@ -1159,6 +1253,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 1.0000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6826641715032635182, guid: ba12300b3f1199346bfb764c99f6f886,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 7.0365314
+      objectReference: {fileID: 0}
+    - target: {fileID: 6826641715032635182, guid: ba12300b3f1199346bfb764c99f6f886,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 1.7116156
+      objectReference: {fileID: 0}
+    - target: {fileID: 6826641715032635182, guid: ba12300b3f1199346bfb764c99f6f886,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.018600753
       objectReference: {fileID: 0}
     - target: {fileID: 6826641715180653084, guid: ba12300b3f1199346bfb764c99f6f886,
         type: 3}
@@ -1416,6 +1525,16 @@ PrefabInstance:
       propertyPath: fpsCam
       value: 
       objectReference: {fileID: 1758540216}
+    - target: {fileID: 6823336159171470417, guid: c48592d85096ce142b19abc33a841045,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6823336159972090514, guid: c48592d85096ce142b19abc33a841045,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6823336159972090602, guid: c48592d85096ce142b19abc33a841045,
         type: 3}
       propertyPath: fpsCam
