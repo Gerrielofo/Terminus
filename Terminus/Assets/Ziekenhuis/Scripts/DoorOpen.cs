@@ -20,11 +20,20 @@ public class DoorOpen : MonoBehaviour
         {
             if (hit.transform.tag == "IsDoor")
             {
-                if (Input.GetKeyDown(KeyCode.E))
+                if (hit.transform.gameObject.GetComponent<OnDoor>().isOpen == false)
                 {
-                    hit.transform.gameObject.GetComponent<OnDoor>().wantOpen = true;
+                    if (Input.GetKeyDown(KeyCode.E))
+                    {
+                        hit.transform.gameObject.GetComponent<OnDoor>().wantOpen = true;
+                    }
                 }
-
+                if (hit.transform.gameObject.GetComponent<OnDoor>().isOpen == true)
+                {
+                    if (Input.GetKeyDown(KeyCode.E))
+                    {
+                        hit.transform.gameObject.GetComponent<OnDoor>().wantClose = true;
+                    }
+                }
             }
         }
     }
