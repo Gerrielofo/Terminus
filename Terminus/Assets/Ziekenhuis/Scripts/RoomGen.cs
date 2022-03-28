@@ -8,14 +8,20 @@ public class RoomGen : MonoBehaviour
     public Transform start;
     public int toSpawn;
     public int spawnAmount;
+    public bool canSpawn;
     // Start is called before the first frame update
     void Start()
     {
-        if (spawnAmount < 30)
+        spawnAmount = Random.Range(0, 100);
+        if (spawnAmount <= 95)
         {
             toSpawn = Random.Range(0, rooms.Length);
             Instantiate(rooms[toSpawn], start.position, Quaternion.identity);
             spawnAmount += 1;
+        }
+        else
+        {
+            canSpawn = false;
         }
     }
 

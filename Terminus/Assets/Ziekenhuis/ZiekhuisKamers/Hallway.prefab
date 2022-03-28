@@ -1660,7 +1660,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3115953789703948460}
-  - component: {fileID: 6078103162755550888}
+  - component: {fileID: 8051136796646891229}
   m_Layer: 0
   m_Name: Hallway
   m_TagString: Untagged
@@ -1713,7 +1713,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6078103162755550888
+--- !u!114 &8051136796646891229
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1726,10 +1726,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rooms:
-  - {fileID: 4643029494266008797, guid: 71baff6b9821a4d4aa1b170739edbb0d, type: 3}
   - {fileID: 8269263931446430561, guid: f534eb618d105c240835262d0ec6701a, type: 3}
+  - {fileID: 4643029494266008797, guid: 71baff6b9821a4d4aa1b170739edbb0d, type: 3}
   start: {fileID: 2911802128920619112}
   toSpawn: 0
+  spawnAmount: 0
+  canSpawn: 0
 --- !u!1 &7488757430577995401
 GameObject:
   m_ObjectHideFlags: 0
