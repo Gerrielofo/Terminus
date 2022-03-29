@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class FirstPerson : MonoBehaviour
 {
@@ -26,12 +27,22 @@ public class FirstPerson : MonoBehaviour
     public int currentHealth;
     public HealthBar healthBar;
 
+    public float Stamina;
+    float maxStamina;
+
+    public Slider StaminaBar;
+    public float staminaDrain;
+    public float staminaGain;
+
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
 
         currentHealth = maxHealth;
         //healthBar.SetMaxhealth(maxHealth);
+
+        maxStamina = Stamina;
+        StaminaBar.maxValue = maxStamina;
     }
 
     private void Update()
@@ -40,6 +51,8 @@ public class FirstPerson : MonoBehaviour
         Mouselook();
         Sprint();
         PlayerHealth();
+        IncreaseEnergy();
+        DecreaseEnergy();
 
     }
 
@@ -86,7 +99,14 @@ public class FirstPerson : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.W))
         {
             movement = sprintSpeed;
+            DecreaseEnergy();
         }
+
+        else if (Stamina <= maxStamina)
+        {
+            IncreaseEnergy();
+        }
+
         else
         {
             movement = walkSpeed;
@@ -115,5 +135,15 @@ public class FirstPerson : MonoBehaviour
         }
     }
 
+    public void DecreaseEnergy()
+    {
+        if (Stamina != 0)
+            Stamina -= staminaDrain * Time.deltaTime;
+    }
+
+    public void IncreaseEnergy()
+    {
+        Stamina += staminaGain * Time.deltaTime;
+    }
 
 }

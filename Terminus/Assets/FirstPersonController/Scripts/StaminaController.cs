@@ -31,7 +31,7 @@ public class StaminaController : MonoBehaviour
 
     public void DecreaseEnergy()
     {
-        if (Stamina != 0)
+        if (Stamina <= 0)
             Stamina -= staminaDrain * Time.deltaTime;       
     }
 

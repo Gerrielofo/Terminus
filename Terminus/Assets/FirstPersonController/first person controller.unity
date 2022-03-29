@@ -338,7 +338,6 @@ GameObject:
   - component: {fileID: 150645878}
   - component: {fileID: 150645877}
   - component: {fileID: 150645882}
-  - component: {fileID: 150645883}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -371,6 +370,10 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 77756910}
+  Stamina: 100
+  StaminaBar: {fileID: 545503932}
+  staminaDrain: 1
+  staminaGain: 2
 --- !u!136 &150645878
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -467,22 +470,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
---- !u!114 &150645883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 150645876}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1eedd13b47fb73e46b1dd418af42ea92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Stamina: 100
-  StaminaBar: {fileID: 545503932}
-  staminaDrain: 25
-  staminaGain: 50
 --- !u!1 &266764249
 GameObject:
   m_ObjectHideFlags: 0
