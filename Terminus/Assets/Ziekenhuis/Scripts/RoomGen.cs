@@ -13,7 +13,7 @@ public class RoomGen : MonoBehaviour
     void Start()
     {
         spawnAmount = Random.Range(0, 100);
-        if (spawnAmount <= 95)
+        if (spawnAmount <= 98)
         {
             toSpawn = Random.Range(0, rooms.Length);
             Instantiate(rooms[toSpawn], start.position, Quaternion.identity);
