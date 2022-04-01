@@ -778,6 +778,7 @@ GameObject:
   - component: {fileID: 1795230776385768520}
   - component: {fileID: 3406457947153073133}
   - component: {fileID: 622301855234225959}
+  - component: {fileID: 1394626917564676401}
   m_Layer: 0
   m_Name: IVBag
   m_TagString: Untagged
@@ -850,6 +851,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1394626917564676401
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414728751100647154}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5688158, y: 1.498589, z: 0.56881577}
+  m_Center: {x: -0.000000014901161, y: 0.7516339, z: 0}
 --- !u!1 &1614970653346899353
 GameObject:
   m_ObjectHideFlags: 0
@@ -2863,6 +2877,7 @@ GameObject:
   - component: {fileID: 6386583006062288826}
   - component: {fileID: 8002449024976982047}
   - component: {fileID: 5254187513424930005}
+  - component: {fileID: 4129324587825590380}
   m_Layer: 0
   m_Name: Monitorheartbeat
   m_TagString: Untagged
@@ -2935,6 +2950,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4129324587825590380
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6046755145685124352}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9301995, y: 2.4023967, z: 0.93019956}
+  m_Center: {x: 0.00000008973296, y: 1.2012429, z: 0.00000012220806}
 --- !u!1 &6104198417138005210
 GameObject:
   m_ObjectHideFlags: 0
@@ -3112,6 +3140,7 @@ GameObject:
   - component: {fileID: 6261293472854693169}
   - component: {fileID: 7010783729030716052}
   - component: {fileID: 5093494083086069342}
+  - component: {fileID: 6640035464488551271}
   m_Layer: 0
   m_Name: Deken
   m_TagString: Untagged
@@ -3184,6 +3213,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6640035464488551271
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6750690859706584971}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.2164345, y: 0.46626619, z: 1.931669}
+  m_Center: {x: 0.0002904513, y: -0.0026522556, z: -0.073933065}
 --- !u!1 &6822471889428221141
 GameObject:
   m_ObjectHideFlags: 0
@@ -3292,6 +3334,7 @@ GameObject:
   - component: {fileID: 7735270205518087094}
   - component: {fileID: 6698797482515532819}
   - component: {fileID: 8868185355645253849}
+  - component: {fileID: 8969344572028105517}
   m_Layer: 0
   m_Name: Operatietafel
   m_TagString: Untagged
@@ -3364,6 +3407,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8969344572028105517
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6922846164188518668}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9528854, y: 0.5028665, z: 0.6187742}
+  m_Center: {x: -0.0015285015, y: 0.25627166, z: 0.00019341707}
 --- !u!1 &6945595277559984359
 GameObject:
   m_ObjectHideFlags: 0

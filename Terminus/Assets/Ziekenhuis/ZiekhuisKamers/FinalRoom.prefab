@@ -697,6 +697,7 @@ GameObject:
   - component: {fileID: 3281760979396663577}
   - component: {fileID: 1883898465828869820}
   - component: {fileID: 4449561815763051126}
+  - component: {fileID: 6218017986055554835}
   m_Layer: 0
   m_Name: Filecabinet
   m_TagString: Untagged
@@ -769,6 +770,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6218017986055554835
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2792505090959557539}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.28069407, y: 0.62806165, z: 0.27253556}
+  m_Center: {x: -0.0013629124, y: 0.3148517, z: 0.00072973967}
 --- !u!1 &2792505091060149541
 GameObject:
   m_ObjectHideFlags: 0
@@ -780,6 +794,7 @@ GameObject:
   - component: {fileID: 3281760980235483039}
   - component: {fileID: 1883898464721664058}
   - component: {fileID: 4449561817541479664}
+  - component: {fileID: 777704242265593243}
   m_Layer: 0
   m_Name: Filecabinet (1)
   m_TagString: Untagged
@@ -852,6 +867,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &777704242265593243
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2792505091060149541}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.28069407, y: 0.62806165, z: 0.27253556}
+  m_Center: {x: -0.0013629124, y: 0.3148517, z: 0.00072973967}
 --- !u!1 &2792505091536867952
 GameObject:
   m_ObjectHideFlags: 0
@@ -863,6 +891,7 @@ GameObject:
   - component: {fileID: 3281760979892177098}
   - component: {fileID: 1883898464244926319}
   - component: {fileID: 4449561817331135397}
+  - component: {fileID: 5456018108620064945}
   m_Layer: 0
   m_Name: Bureau
   m_TagString: Untagged
@@ -935,6 +964,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5456018108620064945
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2792505091536867952}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0000005, y: 0.7588264, z: 0.81619996}
+  m_Center: {x: 0.00000023841852, y: 0.38236547, z: -0.00000047683716}
 --- !u!1 &2938216881821179757
 GameObject:
   m_ObjectHideFlags: 0
@@ -1680,6 +1722,7 @@ GameObject:
   - component: {fileID: 5728660880921108707}
   - component: {fileID: 8660300232727572294}
   - component: {fileID: 6902723435737471884}
+  - component: {fileID: 4101447588918799687}
   m_Layer: 0
   m_Name: OfficeChair
   m_TagString: Untagged
@@ -1752,6 +1795,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4101447588918799687
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4957225228616530521}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.44124153, y: 0.5735214, z: 0.4412415}
+  m_Center: {x: 0.00000022351742, y: 0.2885754, z: -0.00000023841858}
 --- !u!1 &5112574475980314035
 GameObject:
   m_ObjectHideFlags: 0

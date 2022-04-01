@@ -566,6 +566,7 @@ GameObject:
   - component: {fileID: 7113432343739984323}
   - component: {fileID: 2117713640973611356}
   - component: {fileID: 5132318901435628172}
+  - component: {fileID: 3267634355282700316}
   m_Layer: 0
   m_Name: Deken (3)
   m_TagString: Untagged
@@ -638,6 +639,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3267634355282700316
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167681491568200954}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.2164345, y: 0.46626619, z: 1.931669}
+  m_Center: {x: 0.00029068973, y: -0.0026518384, z: -0.073933125}
 --- !u!1 &1251439231405743990
 GameObject:
   m_ObjectHideFlags: 0
@@ -1942,6 +1956,7 @@ GameObject:
   - component: {fileID: 1215572500123059075}
   - component: {fileID: 2842139885322538022}
   - component: {fileID: 42142507685804268}
+  - component: {fileID: 2868575714563833869}
   m_Layer: 0
   m_Name: Ziekenhuisbed (1)
   m_TagString: Untagged
@@ -2014,6 +2029,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2868575714563833869
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987569659051891001}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0015974, y: 0.79197764, z: 1.0736166}
+  m_Center: {x: -0.033733256, y: 0.3968094, z: -0.00019460921}
 --- !u!1 &1987569659237361525
 GameObject:
   m_ObjectHideFlags: 0
@@ -2025,6 +2053,7 @@ GameObject:
   - component: {fileID: 1215572499838778831}
   - component: {fileID: 2842139885103526506}
   - component: {fileID: 42142507533878944}
+  - component: {fileID: 8184771003100672310}
   m_Layer: 0
   m_Name: Deken
   m_TagString: Untagged
@@ -2097,6 +2126,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8184771003100672310
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987569659237361525}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.2164345, y: 0.46626619, z: 1.931669}
+  m_Center: {x: 0.0002904513, y: -0.0026523152, z: -0.073933125}
 --- !u!1 &1987569659489977622
 GameObject:
   m_ObjectHideFlags: 0
@@ -2108,6 +2150,7 @@ GameObject:
   - component: {fileID: 1215572500626202540}
   - component: {fileID: 2842139885891080201}
   - component: {fileID: 42142507249771715}
+  - component: {fileID: 4521852635257371097}
   m_Layer: 0
   m_Name: Ziekenhuisbed
   m_TagString: Untagged
@@ -2180,6 +2223,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4521852635257371097
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987569659489977622}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0015974, y: 0.79197764, z: 1.0736166}
+  m_Center: {x: -0.033732302, y: 0.3968094, z: -0.00019460921}
 --- !u!1 &1987569659892564576
 GameObject:
   m_ObjectHideFlags: 0
@@ -2191,6 +2247,7 @@ GameObject:
   - component: {fileID: 1215572500223482074}
   - component: {fileID: 2842139885488494463}
   - component: {fileID: 42142507115619253}
+  - component: {fileID: 8829368936664199782}
   m_Layer: 0
   m_Name: Deken (1)
   m_TagString: Untagged
@@ -2263,6 +2320,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8829368936664199782
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987569659892564576}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.2164345, y: 0.46626619, z: 1.931669}
+  m_Center: {x: 0.00028949764, y: -0.0026518384, z: -0.073933065}
 --- !u!1 &1987569660825491723
 GameObject:
   m_ObjectHideFlags: 0
@@ -2274,6 +2344,7 @@ GameObject:
   - component: {fileID: 1215572501613544369}
   - component: {fileID: 2842139884664622100}
   - component: {fileID: 42142508372162782}
+  - component: {fileID: 8455163967881306101}
   m_Layer: 0
   m_Name: Ziekenhuisbed (2)
   m_TagString: Untagged
@@ -2346,6 +2417,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8455163967881306101
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987569660825491723}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0015974, y: 0.79197764, z: 1.0736166}
+  m_Center: {x: -0.033733256, y: 0.3968094, z: -0.00019437079}
 --- !u!1 &2092597874041217915
 GameObject:
   m_ObjectHideFlags: 0
@@ -3548,6 +3632,7 @@ GameObject:
   - component: {fileID: 7508299927153529020}
   - component: {fileID: 1474496980163881285}
   - component: {fileID: 826879144174816720}
+  - component: {fileID: 4122423486874538752}
   m_Layer: 0
   m_Name: Ziekenhuisbed (4)
   m_TagString: Untagged
@@ -3620,6 +3705,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4122423486874538752
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4002933333568646909}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0015974, y: 0.79197764, z: 1.0736166}
+  m_Center: {x: -0.033732064, y: 0.3968094, z: -0.00019460921}
 --- !u!1 &4022873320185133881
 GameObject:
   m_ObjectHideFlags: 0
@@ -4216,6 +4314,7 @@ GameObject:
   - component: {fileID: 826953499077485994}
   - component: {fileID: 4673543619836378947}
   - component: {fileID: 7129366646561507888}
+  - component: {fileID: 7396368567343827295}
   m_Layer: 0
   m_Name: Ziekenhuisbed (3)
   m_TagString: Untagged
@@ -4288,6 +4387,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7396368567343827295
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4827448171628917339}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0015974, y: 0.79197764, z: 1.0736166}
+  m_Center: {x: -0.033732064, y: 0.3968094, z: -0.00019460921}
 --- !u!1 &5464570973252010686
 GameObject:
   m_ObjectHideFlags: 0
@@ -4754,6 +4866,7 @@ GameObject:
   - component: {fileID: 3710057544183906969}
   - component: {fileID: 766864223854707196}
   - component: {fileID: 23713569823438340}
+  - component: {fileID: 8284931660984814703}
   m_Layer: 0
   m_Name: Deken (2)
   m_TagString: Untagged
@@ -4826,6 +4939,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8284931660984814703
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6447536500818383315}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.2164345, y: 0.46626619, z: 1.931669}
+  m_Center: {x: 0.0002904513, y: -0.0026518384, z: -0.073933065}
 --- !u!1 &6472632730531650017
 GameObject:
   m_ObjectHideFlags: 0
@@ -6075,6 +6201,7 @@ GameObject:
   - component: {fileID: 2874336005478547199}
   - component: {fileID: 4753517745495968291}
   - component: {fileID: 8583486529735028127}
+  - component: {fileID: 1403015889188327045}
   m_Layer: 0
   m_Name: Ziekenhuisbed (5)
   m_TagString: Untagged
@@ -6147,6 +6274,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1403015889188327045
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8921699582925973374}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0015974, y: 0.79197764, z: 1.0736166}
+  m_Center: {x: -0.033732302, y: 0.3968094, z: -0.00019413237}
 --- !u!1 &9042920403657883579
 GameObject:
   m_ObjectHideFlags: 0
