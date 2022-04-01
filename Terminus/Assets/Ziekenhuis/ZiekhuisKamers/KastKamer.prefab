@@ -3227,6 +3227,9 @@ MonoBehaviour:
   rooms:
   - {fileID: 4643029494266008797, guid: 71baff6b9821a4d4aa1b170739edbb0d, type: 3}
   - {fileID: 6697709776731049549, guid: 7d9b96764aa763344afde27fb3240f7b, type: 3}
+  - {fileID: 5944923811612645068, guid: b5284f5cdacf64945a4ee2e8dd0d347f, type: 3}
+  - {fileID: 5611743465327370408, guid: 22b1dc7f250b7f04bb49d8a5b2bbc9c6, type: 3}
+  - {fileID: 959018245681071792, guid: 54e4975dc67860043a8fa8910f30e418, type: 3}
   start: {fileID: 457560313272577348}
   toSpawn: 0
   spawnAmount: 0
