@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class StaminaController : MonoBehaviour
 {
     public float Stamina;
-    float maxStamina;
+    public float maxStamina;
 
     public Slider StaminaBar;
     public float staminaDrain;
@@ -21,12 +21,13 @@ public class StaminaController : MonoBehaviour
 
     private void Update()
     {
+        StaminaBar.value = Stamina;
+
         if (Input.GetKey(KeyCode.LeftShift) && (Input.GetKey(KeyCode.W)))
             DecreaseEnergy();
         else if (Stamina <= maxStamina)
             IncreaseEnergy();
 
-        StaminaBar.value = Stamina;
     }
 
     public void DecreaseEnergy()

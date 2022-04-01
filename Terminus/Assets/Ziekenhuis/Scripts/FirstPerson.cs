@@ -23,12 +23,12 @@ public class FirstPerson : MonoBehaviour
     public float walkSpeed = 4f;
     public float sprintSpeed = 8f;
 
+    public HealthBar healthBar;
     public int maxHealth = 100;
     public int currentHealth;
-    public HealthBar healthBar;
 
     public float Stamina;
-    float maxStamina;
+    public float maxStamina;
 
     public Slider StaminaBar;
     public float staminaDrain;
@@ -41,7 +41,6 @@ public class FirstPerson : MonoBehaviour
         currentHealth = maxHealth;
         //healthBar.SetMaxhealth(maxHealth);
 
-        maxStamina = Stamina;
         StaminaBar.maxValue = maxStamina;
     }
 
@@ -51,8 +50,7 @@ public class FirstPerson : MonoBehaviour
         Mouselook();
         Sprint();
         PlayerHealth();
-        IncreaseEnergy();
-        DecreaseEnergy();
+        StaminaBar.value = Stamina;
 
     }
 
@@ -95,21 +93,18 @@ public class FirstPerson : MonoBehaviour
     {
         transform.Translate(movement * Input.GetAxis("Horizontal") * Time.deltaTime, 0f, movement * Input.GetAxis("Vertical") * Time.deltaTime);
 
+        movement = walkSpeed;
 
         if (Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.W))
         {
             movement = sprintSpeed;
             DecreaseEnergy();
-        }
 
-        else if (Stamina <= maxStamina)
-        {
-            IncreaseEnergy();
         }
 
         else
         {
-            movement = walkSpeed;
+            IncreaseEnergy();
         }
 
     }
@@ -118,7 +113,7 @@ public class FirstPerson : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            TakeDamage(20);
+            TakeDamage(20);  
 
         }
 
@@ -130,20 +125,25 @@ public class FirstPerson : MonoBehaviour
 
             if (currentHealth <= 0)
             {
-                SceneManager.LoadScene(2);
+                SceneManager.LoadScene(0);
             }
         }
     }
 
     public void DecreaseEnergy()
     {
-        if (Stamina != 0)
+        if (Stamina > 0)
+        {
             Stamina -= staminaDrain * Time.deltaTime;
+        }
     }
 
     public void IncreaseEnergy()
     {
-        Stamina += staminaGain * Time.deltaTime;
+        if (Stamina < maxStamina)
+        {
+            Stamina += staminaGain * Time.deltaTime;
+        }
     }
 
 }
