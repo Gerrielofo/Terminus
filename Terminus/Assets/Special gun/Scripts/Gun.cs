@@ -10,6 +10,8 @@ public class Gun : MonoBehaviour
     public float fireRate = 10f;
     private float nextTimeToFire = 0f;
 
+    //public GameObject spark;
+   //List<ParticleCollisionEvent> colEvents = new List<ParticleCollisionEvent>();
 
     public Camera fpsCam;
     public ParticleSystem ParticleShoot;
@@ -47,6 +49,14 @@ public class Gun : MonoBehaviour
         ParticleShoot.Play();
         Debug.Log(transform.name);
     }
+   // private void OnParticleCollision(GameObject other)
+   // {
+       // int events = ParticleShoot.GetCollisionEvents(other, colEvents);
 
+       // for (int i = 0; i < events; i++)
+       // {
+           // Instantiate(spark, colEvents[i].intersection, Quaternion.LookRotation(colEvents[i].normal));
+        //}
+    //}
 
 }
