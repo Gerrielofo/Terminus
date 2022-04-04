@@ -18,7 +18,7 @@ public class Electronew : MonoBehaviour
     public ParticleSystem particleShoot;
     public ParticleSystem particleShootTwo;
     public ParticleSystem particleShootThree;
-    public ParticleSystem particleShootFour;
+
 
     void Start()
     {
@@ -64,7 +64,7 @@ public class Electronew : MonoBehaviour
         particleShoot.Play();
         particleShootTwo.Play();
         particleShootThree.Play();
-        particleShootFour.Play();
+    
     }
 
    
