@@ -1760,12 +1760,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a97891f5b88b42343801fa93d4837126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotDis: 90
-  rotDis2: -90
+  rotAmount: 0
   isOpen: 0
   wantOpen: 0
   wantClose: 0
-  rotationSpeed: 0
+  rotationSpeed: 2
+  rotationSpeed2: -2
 --- !u!65 &249648149112052658
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6074,12 +6074,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a97891f5b88b42343801fa93d4837126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotDis: -90
-  rotDis2: 90
+  rotAmount: 0
   isOpen: 0
   wantOpen: 0
   wantClose: 0
-  rotationSpeed: 0
+  rotationSpeed: -2
+  rotationSpeed2: 2
 --- !u!65 &297128354735687172
 BoxCollider:
   m_ObjectHideFlags: 0

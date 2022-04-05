@@ -4,32 +4,41 @@ using UnityEngine;
 
 public class OnDoor : MonoBehaviour
 {
-    public float rotDis;
-    public float rotDis2;
+    public float rotAmount;
     public bool isOpen;
     public bool wantOpen;
     public bool wantClose;
     public float rotationSpeed;
+    public float rotationSpeed2;
 
     void Start()
     {
-       
+        wantOpen = false;
+        wantClose = false;
     }
 
     void FixedUpdate()
     {
-        if(wantOpen == true)
+        if(wantOpen == true && rotAmount < 90)
         {
-            transform.Rotate(0, rotDis, 0);
+            transform.Rotate(0, rotationSpeed, 0);
+            rotAmount += 2;
+        }
+        if(wantClose == true && rotAmount > 0)
+        {
+            transform.Rotate(0, rotationSpeed2, 0);
+            rotAmount -= 2;
+            
+        }
+        if (rotAmount == 90)
+        {
             isOpen = true;
             wantOpen = false;
         }
-        if(wantClose == true)
+        if (rotAmount == 0)
         {
-            transform.Rotate(0, rotDis2, 0);
             isOpen = false;
             wantClose = false;
         }
-        
     }
 }

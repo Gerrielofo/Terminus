@@ -47,7 +47,7 @@ public class DoorOpen : MonoBehaviour
                 if (hit.transform.gameObject.GetComponent<OnDoor>().isOpen == false)
                 {
                 
-                    GUI.Label(new Rect(Screen.width / 2 - 75, Screen.height - 400, 150, 30), "Press 'E' to open the door");
+                    GUI.Label(new Rect(Screen.width / 2 - 75, Screen.height - 400, 150, 30), "Press 'E' to open");
                 }
             }
             if (hit.transform.tag == "IsDoor")
@@ -55,7 +55,7 @@ public class DoorOpen : MonoBehaviour
                 if (hit.transform.gameObject.GetComponent<OnDoor>().isOpen == true)
                 {
                 
-                    GUI.Label(new Rect(Screen.width / 2 - 75, Screen.height - 400, 150, 30), "Press 'E' to close the door");
+                    GUI.Label(new Rect(Screen.width / 2 - 75, Screen.height - 400, 150, 30), "Press 'E' to close");
                 }
             }
         }
