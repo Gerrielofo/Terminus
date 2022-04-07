@@ -6,6 +6,12 @@ TagManager:
   tags:
   - IsDoor
   - Hit Marker
+  - End Marker
+  - Red
+  - Blue
+  - Green
+  - Yellow
+  - Purple
   layers:
   - Default
   - TransparentFX
