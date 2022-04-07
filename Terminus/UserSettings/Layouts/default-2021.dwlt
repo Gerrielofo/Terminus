@@ -48,7 +48,11 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
+<<<<<<< Updated upstream
   controlID: 107
+=======
+  controlID: 64
+>>>>>>> Stashed changes
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -223,7 +227,11 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
+<<<<<<< Updated upstream
   controlID: 108
+=======
+  controlID: 65
+>>>>>>> Stashed changes
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +256,11 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
+<<<<<<< Updated upstream
   controlID: 109
+=======
+  controlID: 28
+>>>>>>> Stashed changes
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -330,6 +342,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< Updated upstream
     scrollPos: {x: 0, y: 240}
     m_SelectedIDs: c2830000
     m_LastClickedID: 33730
@@ -338,13 +351,27 @@ MonoBehaviour:
       m_UserAcceptedRename: 0
       m_Name: Particles
       m_OriginalName: Particles
+=======
+    scrollPos: {x: 0, y: 583}
+    m_SelectedIDs: 088a0000
+    m_LastClickedID: 35336
+    m_ExpandedIDs: 00000000a2870000a4870000a6870000a8870000aa870000ac87000000ca9a3b
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: Models
+      m_OriginalName: Models
+>>>>>>> Stashed changes
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
+<<<<<<< Updated upstream
       m_UserData: 35780
+=======
+      m_UserData: 35330
+>>>>>>> Stashed changes
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -361,7 +388,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< Updated upstream
     m_ExpandedIDs: 00000000948300009683000098830000
+=======
+    m_ExpandedIDs: 00000000a2870000a4870000a6870000a8870000aa870000ac870000
+>>>>>>> Stashed changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -388,7 +419,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -405,7 +436,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 5}
+      m_ClientGUIView: {fileID: 11}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -416,7 +447,7 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 201
+  m_DirectoriesAreaWidth: 195
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -493,7 +524,11 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 20fb0100
       m_LastClickedID: 0
+<<<<<<< Updated upstream
       m_ExpandedIDs: c49afcffa0ecffffe0f4ffff
+=======
+      m_ExpandedIDs: e0f3ffff1afaffff
+>>>>>>> Stashed changes
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -745,7 +780,11 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: -0.5353726, y: -0.16863143, z: -2.4826288}
     speed: 2
+<<<<<<< Updated upstream
     m_Value: {x: -0.5353726, y: -0.16863143, z: -2.4826288}
+=======
+    m_Value: {x: -1.104909, y: 0.6517389, z: -9.258143}
+>>>>>>> Stashed changes
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -794,11 +833,19 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.033957995, y: -0.95738554, z: 0.25756928, w: 0.12624699}
     speed: 2
+<<<<<<< Updated upstream
     m_Value: {x: 0.034146972, y: -0.9569883, z: 0.25900242, w: 0.12619461}
   m_Size:
     m_Target: 2.7278006
     speed: 2
     m_Value: 2.7278006
+=======
+    m_Value: {x: 0.004585067, y: -0.98715544, z: 0.15708888, w: 0.028742127}
+  m_Size:
+    m_Target: 12.377554
+    speed: 2
+    m_Value: 1.8364302
+>>>>>>> Stashed changes
   m_Ortho:
     m_Target: 0
     speed: 2
