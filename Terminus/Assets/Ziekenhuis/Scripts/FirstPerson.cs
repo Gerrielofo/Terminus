@@ -34,6 +34,12 @@ public class FirstPerson : MonoBehaviour
     public float staminaDrain;
     public float staminaGain;
 
+    //Van Gerlof
+    public Camera lockpickCam;
+    //public Camera lineCam;
+    public Camera mainCam;
+    public bool camSwitch = false;
+
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -42,6 +48,12 @@ public class FirstPerson : MonoBehaviour
         //healthBar.SetMaxhealth(maxHealth);
 
         StaminaBar.maxValue = maxStamina;
+
+        //Van Gerlof
+        mainCam.enabled = true;
+        lockpickCam.enabled = false;
+        //lineCam.enabled = false;
+        
     }
 
     private void Update()
@@ -51,6 +63,13 @@ public class FirstPerson : MonoBehaviour
         Sprint();
         PlayerHealth();
         StaminaBar.value = Stamina;
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            camSwitch = !camSwitch;
+            lockpickCam.gameObject.SetActive(camSwitch);
+            mainCam.gameObject.SetActive(!camSwitch);
+        }
 
     }
 
@@ -145,5 +164,12 @@ public class FirstPerson : MonoBehaviour
             Stamina += staminaGain * Time.deltaTime;
         }
     }
-
+    public void CameraSwitch()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            lockpickCam.gameObject.SetActive(true);
+            mainCam.gameObject.SetActive(false);
+        }
+    }
 }

@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class LockPickPuzzle : MonoBehaviour
 {
+    public float rotAmount;
+    public float rotationSpeed;
+    public float rotationSpeed2;
 
     float pickPosition;
     public float PickPosition
@@ -81,7 +84,7 @@ public class LockPickPuzzle : MonoBehaviour
             tension = 0f;
             paused = false;
 
-            print("heehee");
+            print("reset");
 
         }
 
@@ -145,9 +148,13 @@ public class LockPickPuzzle : MonoBehaviour
 
     void Win()
     {
-        paused = true;
-        Debug.Log("You opened the lock");
-        
+
+        if (rotAmount < 90)
+        {
+            transform.Rotate(0, rotationSpeed, 0);
+            rotAmount += 2;
+        }
+        print("you won");
     }
 
     private void Pick()

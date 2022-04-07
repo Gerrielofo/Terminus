@@ -115,7 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44e7d4a407aaa974c91019c450ae0c97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1000
+  health: 100
   burning: {fileID: 5553024935356505480}
   electrifying: {fileID: 2326262329506479932}
 --- !u!114 &3228444020808882307
