@@ -5,9 +5,6 @@ using Unity.AI.Navigation;
 
 public class RoomGen : MonoBehaviour
 {
-
-    public NavMeshSurface surface;
-
     public GameObject[] rooms;
     public Transform start;
     public int toSpawn;
@@ -16,25 +13,8 @@ public class RoomGen : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-        spawnAmount = Random.Range(0, 100);
-        if (spawnAmount <= 98)
-        {
-            toSpawn = Random.Range(0, rooms.Length);
-            Instantiate(rooms[toSpawn], start.position, Quaternion.identity);
-            spawnAmount += 1;
-        }
-        else
-        {
-            canSpawn = false;
-        }
-            surface.BuildNavMesh();
-
+        toSpawn = Random.Range(0, rooms.Length);
+        GameObject newRoom = Instantiate(rooms[toSpawn], start.position, Quaternion.identity);
+        newRoom.GetComponent<NavMeshbuild>().Init();
      }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

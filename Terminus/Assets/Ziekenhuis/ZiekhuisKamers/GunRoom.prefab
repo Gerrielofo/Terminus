@@ -190,6 +190,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8827621497927450705}
   - component: {fileID: 424982215059719765}
+  - component: {fileID: -6554591901626460995}
+  - component: {fileID: -3412066791581372939}
   m_Layer: 0
   m_Name: GunRoom
   m_TagString: Untagged
@@ -281,6 +283,49 @@ MonoBehaviour:
   toSpawn: 0
   spawnAmount: 0
   canSpawn: 0
+--- !u!114 &-6554591901626460995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959018245681071792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.083333336
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 0}
+  m_BuildHeightMesh: 0
+--- !u!114 &-3412066791581372939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959018245681071792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8b3350ac7cd7934f82bd17d2e6522b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agents: []
 --- !u!1 &1528666594223779860
 GameObject:
   m_ObjectHideFlags: 0
@@ -1194,7 +1239,7 @@ GameObject:
   - component: {fileID: 2904119734253196932}
   - component: {fileID: 5995980092178368569}
   - component: {fileID: 4949570728169234460}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DoorLeft
   m_TagString: IsDoor
   m_Icon: {fileID: 0}
@@ -2239,7 +2284,7 @@ GameObject:
   - component: {fileID: 4883058025889740326}
   - component: {fileID: 4089157161349884059}
   - component: {fileID: 4888966750616239530}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DoorRight
   m_TagString: IsDoor
   m_Icon: {fileID: 0}

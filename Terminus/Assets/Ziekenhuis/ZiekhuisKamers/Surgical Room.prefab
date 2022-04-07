@@ -373,7 +373,7 @@ GameObject:
   - component: {fileID: 2020877984085943898}
   - component: {fileID: 7453484265701882087}
   - component: {fileID: 2023976527782456790}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DoorRight
   m_TagString: IsDoor
   m_Icon: {fileID: 0}
@@ -2775,6 +2775,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2687945623605334061}
   - component: {fileID: 6497099576395224617}
+  - component: {fileID: 2813903653519447626}
+  - component: {fileID: -1773618096757746857}
   m_Layer: 0
   m_Name: Surgical Room
   m_TagString: Untagged
@@ -2865,11 +2867,58 @@ MonoBehaviour:
   - {fileID: 6697709776731049549, guid: 7d9b96764aa763344afde27fb3240f7b, type: 3}
   - {fileID: 959018245681071792, guid: 54e4975dc67860043a8fa8910f30e418, type: 3}
   - {fileID: 5611743465327370408, guid: 22b1dc7f250b7f04bb49d8a5b2bbc9c6, type: 3}
-  - {fileID: 8269263931446430561, guid: f534eb618d105c240835262d0ec6701a, type: 3}
+  - {fileID: 5611743465327370408, guid: 22b1dc7f250b7f04bb49d8a5b2bbc9c6, type: 3}
   start: {fileID: 2745889140763783401}
   toSpawn: 0
   spawnAmount: 0
   canSpawn: 0
+--- !u!114 &2813903653519447626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5944923811612645068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8b3350ac7cd7934f82bd17d2e6522b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agents:
+  - {fileID: 166870750657062640}
+  - {fileID: 3382038912725867814}
+  - {fileID: 51633447230447870}
+  - {fileID: 4743654347813618711}
+--- !u!114 &-1773618096757746857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5944923811612645068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.083333336
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 0}
+  m_BuildHeightMesh: 0
 --- !u!1 &6046755145685124352
 GameObject:
   m_ObjectHideFlags: 0
@@ -3700,7 +3749,7 @@ GameObject:
   - component: {fileID: 8611448959698962168}
   - component: {fileID: 934921982162868293}
   - component: {fileID: 1981560663053201504}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DoorLeft
   m_TagString: IsDoor
   m_Icon: {fileID: 0}
@@ -4426,6 +4475,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a29a99dcf27a784469f64aefc66dbe7f, type: 3}
+--- !u!195 &3382038912725867814 stripped
+NavMeshAgent:
+  m_CorrespondingSourceObject: {fileID: 2844143605266596201, guid: a29a99dcf27a784469f64aefc66dbe7f,
+    type: 3}
+  m_PrefabInstance: {fileID: 691029806666456143}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8921710162816321837 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8234638323401315682, guid: a29a99dcf27a784469f64aefc66dbe7f,
@@ -4501,6 +4556,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a29a99dcf27a784469f64aefc66dbe7f, type: 3}
+--- !u!195 &166870750657062640 stripped
+NavMeshAgent:
+  m_CorrespondingSourceObject: {fileID: 2844143605266596201, guid: a29a99dcf27a784469f64aefc66dbe7f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2677589651674130329}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6300529793031680763 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8234638323401315682, guid: a29a99dcf27a784469f64aefc66dbe7f,
@@ -4576,6 +4637,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a29a99dcf27a784469f64aefc66dbe7f, type: 3}
+--- !u!195 &51633447230447870 stripped
+NavMeshAgent:
+  m_CorrespondingSourceObject: {fileID: 2844143605266596201, guid: a29a99dcf27a784469f64aefc66dbe7f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2868544277631099287}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6163266523185624309 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8234638323401315682, guid: a29a99dcf27a784469f64aefc66dbe7f,
@@ -4654,6 +4721,12 @@ PrefabInstance:
 --- !u!4 &1507573482489188380 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8234638323401315682, guid: a29a99dcf27a784469f64aefc66dbe7f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7398488353088619902}
+  m_PrefabAsset: {fileID: 0}
+--- !u!195 &4743654347813618711 stripped
+NavMeshAgent:
+  m_CorrespondingSourceObject: {fileID: 2844143605266596201, guid: a29a99dcf27a784469f64aefc66dbe7f,
     type: 3}
   m_PrefabInstance: {fileID: 7398488353088619902}
   m_PrefabAsset: {fileID: 0}
