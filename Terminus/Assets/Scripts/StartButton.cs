@@ -9,4 +9,13 @@ public class StartButton : MonoBehaviour
     {
         Application.LoadLevel(1);
     }
+    public void ToOptions()
+    {
+        Application.LoadLevel(3);
+    }
+    public void ToMain()
+    {
+        Application.LoadLevel(0);
+    }
+   
 }
