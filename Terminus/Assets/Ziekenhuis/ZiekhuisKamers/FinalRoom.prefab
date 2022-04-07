@@ -60,6 +60,7 @@ Transform:
   - {fileID: 3281760979396663577}
   - {fileID: 3281760979892177098}
   - {fileID: 5728660880921108707}
+  - {fileID: 1068058706663489186}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2999,3 +3000,98 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.9999998, y: 0, z: 2}
   m_Center: {x: 0.00000011920929, y: 0, z: 0}
+--- !u!1001 &8977308280491076544
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9015903737997161809}
+    m_Modifications:
+    - target: {fileID: 8234638323401315682, guid: a29a99dcf27a784469f64aefc66dbe7f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234638323401315682, guid: a29a99dcf27a784469f64aefc66dbe7f,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0349663
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234638323401315682, guid: a29a99dcf27a784469f64aefc66dbe7f,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0349663
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234638323401315682, guid: a29a99dcf27a784469f64aefc66dbe7f,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0349663
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234638323401315682, guid: a29a99dcf27a784469f64aefc66dbe7f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.7438402
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234638323401315682, guid: a29a99dcf27a784469f64aefc66dbe7f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.00000011920929
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234638323401315682, guid: a29a99dcf27a784469f64aefc66dbe7f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.064340115
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234638323401315682, guid: a29a99dcf27a784469f64aefc66dbe7f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.72191966
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234638323401315682, guid: a29a99dcf27a784469f64aefc66dbe7f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234638323401315682, guid: a29a99dcf27a784469f64aefc66dbe7f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.69197696
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234638323401315682, guid: a29a99dcf27a784469f64aefc66dbe7f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234638323401315682, guid: a29a99dcf27a784469f64aefc66dbe7f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234638323401315682, guid: a29a99dcf27a784469f64aefc66dbe7f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -87.574
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234638323401315682, guid: a29a99dcf27a784469f64aefc66dbe7f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8286618871776660836, guid: a29a99dcf27a784469f64aefc66dbe7f,
+        type: 3}
+      propertyPath: health
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8722521682022436824, guid: a29a99dcf27a784469f64aefc66dbe7f,
+        type: 3}
+      propertyPath: m_Name
+      value: Zombi3.0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a29a99dcf27a784469f64aefc66dbe7f, type: 3}
+--- !u!4 &1068058706663489186 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8234638323401315682, guid: a29a99dcf27a784469f64aefc66dbe7f,
+    type: 3}
+  m_PrefabInstance: {fileID: 8977308280491076544}
+  m_PrefabAsset: {fileID: 0}

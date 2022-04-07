@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5037439427910589127}
   - component: {fileID: 7065130980565626381}
   - component: {fileID: 8488711971271729712}
+  - component: {fileID: 8286618871776660836}
   m_Layer: 0
   m_Name: Zombi3.0
   m_TagString: Untagged
@@ -98,3 +99,18 @@ CapsuleCollider:
   m_Height: 1.8
   m_Direction: 1
   m_Center: {x: 0, y: 0.89828944, z: -0.043881264}
+--- !u!114 &8286618871776660836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8722521682022436824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44e7d4a407aaa974c91019c450ae0c97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50
+  burning: {fileID: 0}
+  electrifying: {fileID: 0}
