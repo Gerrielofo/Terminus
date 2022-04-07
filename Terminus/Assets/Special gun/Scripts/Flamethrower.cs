@@ -6,7 +6,7 @@ public class Flamethrower : MonoBehaviour
 {
     public float damage = 10f;
     public float range = 100f;
-    public float sphereRadius = 1f;
+
 
     private float nextTimeToFire = 0f;
     public float fireRate = 10f;
@@ -35,7 +35,7 @@ public class Flamethrower : MonoBehaviour
     void Spit()
     {
         RaycastHit hit;
-        if (Physics.SphereCast(fpsCam.transform.position, sphereRadius, fpsCam.transform.forward, out hit, range))
+        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
             Target target = hit.transform.GetComponent<Target>();
             if (target != null)
