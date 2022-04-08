@@ -150,6 +150,7 @@ public class LockPickPuzzle : MonoBehaviour
     {
         Application.LoadLevel(0);
         print("you unlocked the door");
+        Cursor.lockState = CursorLockMode.None;
     }
 
     private void Pick()
