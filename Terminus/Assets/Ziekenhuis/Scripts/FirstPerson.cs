@@ -179,18 +179,4 @@ public class FirstPerson : MonoBehaviour
     {
         
     }
-    void OnGUI()
-    {
-        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
-        {
-            if (hit.transform.tag == "Puzzel")
-            {
-                if (hit.transform.gameObject.GetComponent<LockerDeur>().openLocker == false)
-                {
-
-                    GUI.Label(new Rect(Screen.width / 2 - 75, Screen.height - 400, 150, 30), "Press 'E' to unlock");
-                }
-            }
-        }
-    }
 }
