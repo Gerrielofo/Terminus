@@ -17,5 +17,8 @@ public class StartButton : MonoBehaviour
     {
         Application.LoadLevel(0);
     }
-   
+   public void Exit()
+    {
+        Application.Quit();
+    }
 }
