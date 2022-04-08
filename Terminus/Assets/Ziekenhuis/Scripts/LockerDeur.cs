@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class LockerDeur : MonoBehaviour
 {
-    public float rotAmount;
-    public float rotationSpeed;
-    public float rotationSpeed2;
     public bool openLocker = false;
 
     void Update()
@@ -19,7 +16,8 @@ public class LockerDeur : MonoBehaviour
 
     public void OpenLocker()
     {
-
+        transform.Rotate(0, 90, 0);
+        openLocker = false;
     }
     
 }

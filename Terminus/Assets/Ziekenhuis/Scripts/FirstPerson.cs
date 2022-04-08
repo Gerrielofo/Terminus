@@ -35,10 +35,12 @@ public class FirstPerson : MonoBehaviour
     public float staminaGain;
 
     //Van Gerlof
-    public Camera lockpickCam;
+    //public Camera lockpickCam;
     //public Camera lineCam;
-    public Camera mainCam;
-    public bool camSwitch = false;
+    public Camera fpsCam;
+    //public bool camSwitch = false;
+    public RaycastHit hit;
+    public float range;
 
     void Start()
     {
@@ -50,13 +52,13 @@ public class FirstPerson : MonoBehaviour
         StaminaBar.maxValue = maxStamina;
 
         //Van Gerlof
-        mainCam.enabled = true;
-        lockpickCam.enabled = false;
+        //mainCam.enabled = true;
+        //lockpickCam.enabled = false;
         //lineCam.enabled = false;
-        
+
     }
 
-    private void Update()
+    void Update()
     {
         Movement();
         Mouselook();
@@ -64,13 +66,22 @@ public class FirstPerson : MonoBehaviour
         PlayerHealth();
         StaminaBar.value = Stamina;
 
-        if (Input.GetKeyDown(KeyCode.E))
+        //if (Input.GetKeyDown(KeyCode.E))
+        //{
+        //    camSwitch = !camSwitch;
+        //    lockpickCam.gameObject.SetActive(camSwitch);
+        //    mainCam.gameObject.SetActive(!camSwitch);
+        //}
+        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
-            camSwitch = !camSwitch;
-            lockpickCam.gameObject.SetActive(camSwitch);
-            mainCam.gameObject.SetActive(!camSwitch);
+            if (hit.transform.tag == "Puzzel")
+            {
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    Application.LoadLevel(5);
+                }
+            }
         }
-
     }
 
     void Movement()
@@ -132,7 +143,7 @@ public class FirstPerson : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            TakeDamage(20);  
+            TakeDamage(20);
 
         }
 
@@ -166,10 +177,20 @@ public class FirstPerson : MonoBehaviour
     }
     public void CameraSwitch()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        
+    }
+    void OnGUI()
+    {
+        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
-            lockpickCam.gameObject.SetActive(true);
-            mainCam.gameObject.SetActive(false);
+            if (hit.transform.tag == "Puzzel")
+            {
+                if (hit.transform.gameObject.GetComponent<LockerDeur>().openLocker == false)
+                {
+
+                    GUI.Label(new Rect(Screen.width / 2 - 75, Screen.height - 400, 150, 30), "Press 'E' to unlock");
+                }
+            }
         }
     }
 }

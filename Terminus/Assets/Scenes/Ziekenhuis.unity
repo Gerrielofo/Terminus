@@ -5853,6 +5853,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1098289166329200808, guid: de72e3b76113a4b4a9acfea7e833542d,
         type: 3}
+      propertyPath: range
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1098289166329200808, guid: de72e3b76113a4b4a9acfea7e833542d,
+        type: 3}
+      propertyPath: fpsCam
+      value: 
+      objectReference: {fileID: 584764318}
+    - target: {fileID: 1098289166329200808, guid: de72e3b76113a4b4a9acfea7e833542d,
+        type: 3}
       propertyPath: Stamina
       value: 5
       objectReference: {fileID: 0}

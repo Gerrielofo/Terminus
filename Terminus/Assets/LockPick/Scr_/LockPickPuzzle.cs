@@ -148,13 +148,8 @@ public class LockPickPuzzle : MonoBehaviour
 
     void Win()
     {
-
-        if (rotAmount < 90)
-        {
-            transform.Rotate(0, rotationSpeed, 0);
-            rotAmount += 2;
-        }
-        print("you won");
+        Application.LoadLevel(0);
+        print("you unlocked the door");
     }
 
     private void Pick()

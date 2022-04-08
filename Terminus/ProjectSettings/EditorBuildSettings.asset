@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Options screen.unity
     guid: 707befd0782e1434a9d4e6e95afab258
+  - enabled: 1
+    path: Assets/Scenes/Terminal.unity
+    guid: 6035b1ce6074ac442977810033f9408a
+  - enabled: 1
+    path: Assets/Scenes/LockPickPuzzle.unity
+    guid: db02d4ffd3bd6ca4f849995c8ef9899a
   m_configObjects: {}

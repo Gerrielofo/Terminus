@@ -12,6 +12,7 @@ TagManager:
   - Green
   - Yellow
   - Purple
+  - Puzzel
   layers:
   - Default
   - TransparentFX
